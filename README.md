@@ -6,53 +6,31 @@ This repo contains info on all the apps / tools / settings I use on my Mac.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [What Macbook do I have?](#what-macbook-do-i-have)
 - [OS Settings](#os-settings)
   - [Desktop](#desktop)
   - [Finder](#finder)
   - [Dock](#dock)
+  - [Useful Shortcuts](#useful-shortcuts)
 - [Quick Launching](#quick-launching)
 - [Homebrew](#homebrew)
   - [Homebrew](#homebrew-1)
   - [RayCast Homebrew Plugin](#raycast-homebrew-plugin)
-- [Window Management](#window-management)
 - [App Switching](#app-switching)
-- [Menu Bar Utilities](#menu-bar-utilities)
-  - [Hidden Bar](#hidden-bar)
-  - [System Stats Widgets](#system-stats-widgets)
-  - [Menu Bar Calendar](#menu-bar-calendar)
-- [Break Timer](#break-timer)
-- [Web Browser](#web-browser)
-  - [Firefox](#firefox)
-- [Other Apps I Use Daily](#other-apps-i-use-daily)
-  - [Docker](#docker)
+- [Chrome](#chrome)
 - [Terminal](#terminal)
   - [Shell](#shell)
-    - [Load dotfiles](#load-dotfiles)
+- [Git](#git)
+  - [Global Settings](#global-settings)
   - [Github SSH Setup](#github-ssh-setup)
-    - [Other command line tools I use](#other-command-line-tools-i-use)
+  - [Multiple SSH Keys for Git Platforms](#multiple-ssh-keys-for-git-platforms)
 - [Node.js](#nodejs)
   - [Global Modules](#global-modules)
 - [VS Code](#vs-code)
+  - [Extensions](#extensions)
+  - [Settings](#settings)
+  - [Useful Shortcuts](#useful-shortcuts-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## What Macbook do I have?
-
-I am using a 2020 13" Macbook Pro for work and a 2021 14" Macbook Pro for personal stuff.
-
-The specs for both machines:
-* 2020
-  * Apple M1
-* 2021
-  * Apple M1 Pro
-* 16GB RAM
-* 500GB SSD
-
-Read more about these Macbooks here:
-
-* [2020](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-m1-8-core-13-2020-specs.html)
-* [2021](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-m1-pro-8-core-cpu-14-core-gpu-14-2021-specs.html)
 
 ## OS Settings
 
@@ -101,6 +79,10 @@ I don't use the Dock at all. It takes up screen space, and I can use RayCast to 
     * Animate opening applications -> No
     * Show suggested and recent apps in the Dock -> No
 
+### Useful Shortcuts
+
+* Find [here](/shortcuts.md) useful Mac shortcuts.
+
 ## Quick Launching
 
 The built in spotlight search is a bit slow for me and usually has web search results as the default instead of apps or folders on my machine.
@@ -132,22 +114,6 @@ After Homebrew is done installing, we will use it (via RayCast) to install every
 
 Install the [RayCast Homebrew Plugin](https://www.raycast.com/nhojb/brew) so we can easily install formulae and casks directly from RayCast.
 
-## Window Management
-
-I know this feature is built in to a lot of other operating systems, but it is not built in to a Mac, so we need an app for it.
-
-RayCast has this feature built in, but I am still using a separate app for this.
-
-I use [rectangle](https://rectangleapp.com/) to move and resize windows using keyboard shortcuts. I used to use [spectacle](https://www.spectacleapp.com/), but rectangle is more regularly maintained and allows me to use all of the same keyboard shortcuts as spectacle.
-
-I highly recommend installing this and memorizing the keyboard shortcuts. Fluid and seamless window management is key to being productive while coding.
-
-Search for `rectangle` in RayCast `brew search` or:
-
-```
-brew install rectangle
-```
-
 ## App Switching
 
 The built in App switcher only shows application icons, and only shows 1 icon per app regardless of how many windows you have open in that app.
@@ -162,130 +128,7 @@ Search for `alt-tab` in RayCast `brew search` or:
 brew install alt-tab
 ```
 
-## Menu Bar Utilities
-
-### Hidden Bar
-
-If you have several apps running that have menu bar icons, [Hidden Bar](https://github.com/dwarvesf/hidden) will let you choose which ones should be hidden after a timeout. This cleans things up if you have a ton of background apps running.
-
-Search for `hiddenbar` in RayCast `brew search` or:
-
-```sh
-brew install hiddenbar
-```
-
-### System Stats Widgets
-
-I use [stats](https://github.com/exelban/stats) to see my network traffic, CPU temp / usage and RAM usage at a glance.
-
-In each widget, a key setting to look for is under "widget settings", choose "merge widgets into one".
-
-Search for `stats` in RayCast `brew search` or:
-
-```sh
-brew install stats
-```
-
-### Menu Bar Calendar
-
-I like to have a calendar in the menu bar that I can quickly look at. stats does not include one, so I found [itsycal](https://www.mowglii.com/itsycal/).
-
-```sh
-brew install itsycal
-```
-
-itsycal shows the date, so I hide the date in the system menu bar widget:
-
-* System Preferences
-  * Dock & Menu Bar
-      * Clock
-          * Show Date -> Never
-          * Show Day of Week -> No
-
-## Break Timer
-
-I use an app called [Time Out](https://www.dejal.com/timeout/).
-
-I have it setup to show:
-* 10 second micro break every 15 minutes
-* 5 minute long break every 60 minutes
-
-There is also a cross platform break timer call [Stretchly](https://hovancik.net/stretchly/). I have not used it but a lot of people have recommended it.
-
-## Web Browser
-
-### Firefox
-
-I use Firefox because it is open source and comes from the [Mozilla Foundation](https://www.mozilla.org/en-US/about/manifesto/), a non profit company that [respects my privacy](https://www.mozilla.org/en-US/firefox/privacy/).
-
-I use Firefox Developer Edition. To install this with `brew` you will need to tap [a cask](https://github.com/Homebrew/homebrew-cask-versions) first:
-
-```sh
-brew tap homebrew/cask-versions
-```
-
-You can then install Firefox Developer Edition with brew:
-
-```sh
-brew install homebrew/cask-versions/firefox-developer-edition
-```
-
-I use the following extensions to stay productive:
-
-* [Tabliss](https://tabliss.io/) - simple new tab page
-* [OneTab](https://www.one-tab.com/) - consolidate a bunch of open tabs into a shareable list of links
-* [Dark Reader](https://darkreader.org/) - turn any site into dark mode
-
-I use the following extensions to protect my privacy while browsing the web:
-
-* Adblocker - [uBlock Origin](https://github.com/gorhill/uBlock)
-* Tracker Blocker - [Privacy Badger](https://privacybadger.org/)
-  * Firefox now includes tracker blocking, but I leave Privacy Badger enabled.
-* [Decentraleyes](https://decentraleyes.org/)
-  * Caches CDN links locally and intercepts requests to serve from the cache. Prevents CDNs from tracking you across websites.
-
-## Other Apps I Use Daily
-
-* android-file-transfer - Transfer files to / from my android phone
-* android-platform-tools - Installs `adb` without the need for the full android studio.
-* [keepingyouawake](https://keepingyouawake.app/) - Prevents my Mac from going to sleep when I'm presenting / live streaming
-* [discord](https://discord.com/) - Messaging / Community
-* [vlc](https://www.videolan.org/) - I use VLC to watch videos instead of the built in QuickTime.
-* [keka](https://www.keka.io/en/) - Can extract 7z / rar and other types of archives
-* [kap](https://getkap.co/) - Screen recorder / gif maker
-* [figma](https://www.figma.com/) - Image editor
-* [visual-studio-code](https://code.visualstudio.com/) - Code Editor
-* [sublime-text](https://www.sublimetext.com/) - Note taking (I know there are better apps...)
-
-You can install them in one go by placing them all into a text file and then running brew install:
-
-```
-android-file-transfer
-android-platform-tools
-keepingyouawake
-discord
-slack
-vlc
-keka
-kap
-time-out
-figma
-visual-studio-code
-sublime-text
-insomnia
-```
-
-```sh
-xargs brew install < apps.txt
-```
-
-### Docker
-
-There are multiple results when you search `docker` within `brew`. To install Docker desktop:
-
-```sh
-brew install --cask docker
-```
+## Chrome
 
 ## Terminal
 
@@ -324,26 +167,62 @@ Once installed, launch it and customize the settings / preferences to your likin
 
 Mac now comes with `zsh` as the default [shell](https://en.wikipedia.org/wiki/Comparison_of_command_shells). I've switched to using this with [Oh My Zsh](https://ohmyz.sh/).
 
-#### Load dotfiles
+Config for **Oh My Zsh** in `~/.zshrc`:
 
-All my dotfiles are stored on [github](https://github.com/w3cj/dotfiles).
+```bash
+export ZSH="$HOME/.oh-my-zsh"
 
-I clone this repo to my machine and copy the files into my home directory.
+ZSH_THEME="robbyrussell"
+CASE_SENSITIVE="true"
+ENABLE_CORRECTION="true"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+export EDITOR='nano'
+```
+
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k) is a popular theme.
+
+## Git
+
+### Global Settings
+
+This is the most common and comprehensive way to see all your global Git configurations.
+
+```bash
+git config --global --list
+```
+
+This command will display all the settings stored in your global Git configuration file, typically located at `~/.gitconfig`. This is my config:
+
+```bash
+[user]
+    name = Your Name
+    email = your.email@example.com
+[core]
+    editor = nano
+    excludesfile = /Users/marcel/.gitignore_global
+[init]
+    defaultBranch = main
+[pager]
+    branch = false
+```
+
+Config in `~/.gitignore_global`:
+
+```bash
+.DS_Store
+```
 
 ### Github SSH Setup
 
 * Follow [this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to setup an ssh key for github
 * Follow [this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to add the ssh key to your github account
 
-#### Other command line tools I use
-
-* [ffmpeg](https://en.wikipedia.org/wiki/FFmpeg) - edit videos from the command line
-* [imagemagick](https://en.wikipedia.org/wiki/ImageMagick) - edit images from the command line
-
-```sh
-brew install ffmpeg
-brew install imagemagick
-```
+### Multiple SSH Keys for Git Platforms
+* Follow [this guide](/multiple-ssh-config.md) to set up distinct SSH keys on your Mac for different Git platforms (like GitHub and GitLab)
 
 ## Node.js
 
@@ -386,4 +265,99 @@ npm install -g lite-server http-server license gitignore
 
 VS Code is my preferred code editor.
 
-You can view all of my VS Code settings / extensions [here](https://github.com/CodingGarden/vscode-settings).
+### Extensions
+
+* Theme / Editor Experience
+  * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+    * Nice / colorful icons for many different file types
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+    * Integrates ESLint JS
+  * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    * Automatically format javascript, JSON, CSS, Sass
+  * [PostCSS Intellisense and Highlighting](https://marketplace.visualstudio.com/items?itemName=vunguyentuan.vscode-postcss)
+    * Works better than the other more popular one of a similar name.
+  * [Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)
+    * Makes TS errors more human readable.
+* Languages and Libraries
+  * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+    * Intelligent Tailwind CSS tooling for VS Code.
+  * [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+    * Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier.
+  * [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+    * Svelte language support for VS Code.
+  * [Prisma](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma)
+    * Adds syntax highlighting, formatting, auto-completion, jump-to-definition and linting for .prisma files.
+
+### Settings
+
+```json
+{
+    "editor.multiCursorModifier": "ctrlCmd",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.detectIndentation": true,
+    "editor.fontSize": 13,
+    "editor.formatOnPaste": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.snippetSuggestions": "top",
+    "editor.suggestSelection": "first",
+    "editor.lineHeight": 0,
+    "editor.minimap.enabled": false,
+    "editor.linkedEditing": true,
+    "editor.tabSize": 2,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "emmet.showAbbreviationSuggestions": false,
+    "terminal.integrated.fontSize": 13,
+    "workbench.startupEditor": "newUntitledFile",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.editor.labelFormat": "medium",
+    "workbench.editor.showTabs": "none",
+    "eslint.enable": true,
+    "eslint.validate": [
+        "vue",
+        "react",
+        "typescript",
+        "html",
+        "javascript"
+    ],
+    "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[handlebars]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
+```
+
+### Useful Shortcuts
+
+* Find [here](/shortcuts.md) most used VS code shortcuts.
