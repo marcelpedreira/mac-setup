@@ -182,6 +182,24 @@ Once installed, launch it and customize the settings / preferences to your likin
 
 Mac now comes with `zsh` as the default [shell](https://en.wikipedia.org/wiki/Comparison_of_command_shells). I've switched to using this with [Oh My Zsh](https://ohmyz.sh/).
 
+Config for **Oh My Zsh** in `~/.zshrc`:
+
+```bash
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="robbyrussell"
+CASE_SENSITIVE="true"
+ENABLE_CORRECTION="true"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+export EDITOR='nano'
+```
+
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k) is a popular theme.
+
 ## Git
 
 ### Global Settings
@@ -192,20 +210,25 @@ This is the most common and comprehensive way to see all your global Git configu
 git config --global --list
 ```
 
-This command will display all the settings stored in your global Git configuration file, typically located at `~/.gitconfig`. This is the structure of the file:
+This command will display all the settings stored in your global Git configuration file, typically located at `~/.gitconfig`. This is my config:
 
 ```bash
 [user]
     name = Your Name
     email = your.email@example.com
 [core]
-    editor = code --wait
+    editor = nano
+    excludesfile = /Users/marcel/.gitignore_global
 [init]
     defaultBranch = main
-[color]
-    ui = auto
-[credential]
-    helper = osxkeychain
+[pager]
+    branch = false
+```
+
+Config in `~/.gitignore_global`:
+
+```bash
+.DS_Store
 ```
 
 ### Github SSH Setup
