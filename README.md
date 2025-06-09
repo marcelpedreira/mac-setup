@@ -29,8 +29,8 @@ This repo contains info on all the apps / tools / settings I use on my Mac.
 - [Node.js](#nodejs)
   - [Global Modules](#global-modules)
 - [VS Code](#vs-code)
-  - [Settings](#settings)
   - [Extensions](#extensions)
+  - [Settings](#settings)
   - [Useful Shortcuts](#useful-shortcuts-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -280,9 +280,99 @@ npm install -g lite-server http-server license gitignore
 
 VS Code is my preferred code editor.
 
+### Extensions
+
+* Theme / Editor Experience
+  * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+    * Nice / colorful icons for many different file types
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+    * Integrates ESLint JS
+  * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    * Automatically format javascript, JSON, CSS, Sass
+  * [PostCSS Intellisense and Highlighting](https://marketplace.visualstudio.com/items?itemName=vunguyentuan.vscode-postcss)
+    * Works better than the other more popular one of a similar name.
+  * [Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)
+    * Makes TS errors more human readable.
+* Languages and Libraries
+  * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+    * Intelligent Tailwind CSS tooling for VS Code.
+  * React
+    * [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+      * Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier.
+  * [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+    * Svelte language support for VS Code.
+  * [Prisma](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma)
+    * Adds syntax highlighting, formatting, auto-completion, jump-to-definition and linting for .prisma files.
+
 ### Settings
 
-### Extensions
+```json
+{
+    "editor.multiCursorModifier": "ctrlCmd",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.detectIndentation": true,
+    "editor.fontSize": 13,
+    "editor.formatOnPaste": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.snippetSuggestions": "top",
+    "editor.suggestSelection": "first",
+    "editor.lineHeight": 0,
+    "editor.minimap.enabled": false,
+    "editor.linkedEditing": true,
+    "editor.tabSize": 2,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "emmet.showAbbreviationSuggestions": false,
+    "terminal.integrated.fontSize": 13,
+    "workbench.startupEditor": "newUntitledFile",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.editor.labelFormat": "medium",
+    "workbench.editor.showTabs": "none",
+    "eslint.enable": true,
+    "eslint.validate": [
+        "vue",
+        "react",
+        "typescript",
+        "html",
+        "javascript"
+    ],
+    "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[handlebars]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
+```
 
 ### Useful Shortcuts
 
