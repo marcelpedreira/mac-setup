@@ -132,22 +132,6 @@ After Homebrew is done installing, we will use it (via RayCast) to install every
 
 Install the [RayCast Homebrew Plugin](https://www.raycast.com/nhojb/brew) so we can easily install formulae and casks directly from RayCast.
 
-## Window Management
-
-I know this feature is built in to a lot of other operating systems, but it is not built in to a Mac, so we need an app for it.
-
-RayCast has this feature built in, but I am still using a separate app for this.
-
-I use [rectangle](https://rectangleapp.com/) to move and resize windows using keyboard shortcuts. I used to use [spectacle](https://www.spectacleapp.com/), but rectangle is more regularly maintained and allows me to use all of the same keyboard shortcuts as spectacle.
-
-I highly recommend installing this and memorizing the keyboard shortcuts. Fluid and seamless window management is key to being productive while coding.
-
-Search for `rectangle` in RayCast `brew search` or:
-
-```
-brew install rectangle
-```
-
 ## App Switching
 
 The built in App switcher only shows application icons, and only shows 1 icon per app regardless of how many windows you have open in that app.
@@ -162,122 +146,9 @@ Search for `alt-tab` in RayCast `brew search` or:
 brew install alt-tab
 ```
 
-## Menu Bar Utilities
-
-### Hidden Bar
-
-If you have several apps running that have menu bar icons, [Hidden Bar](https://github.com/dwarvesf/hidden) will let you choose which ones should be hidden after a timeout. This cleans things up if you have a ton of background apps running.
-
-Search for `hiddenbar` in RayCast `brew search` or:
-
-```sh
-brew install hiddenbar
-```
-
-### System Stats Widgets
-
-I use [stats](https://github.com/exelban/stats) to see my network traffic, CPU temp / usage and RAM usage at a glance.
-
-In each widget, a key setting to look for is under "widget settings", choose "merge widgets into one".
-
-Search for `stats` in RayCast `brew search` or:
-
-```sh
-brew install stats
-```
-
-### Menu Bar Calendar
-
-I like to have a calendar in the menu bar that I can quickly look at. stats does not include one, so I found [itsycal](https://www.mowglii.com/itsycal/).
-
-```sh
-brew install itsycal
-```
-
-itsycal shows the date, so I hide the date in the system menu bar widget:
-
-* System Preferences
-  * Dock & Menu Bar
-      * Clock
-          * Show Date -> Never
-          * Show Day of Week -> No
-
-## Break Timer
-
-I use an app called [Time Out](https://www.dejal.com/timeout/).
-
-I have it setup to show:
-* 10 second micro break every 15 minutes
-* 5 minute long break every 60 minutes
-
-There is also a cross platform break timer call [Stretchly](https://hovancik.net/stretchly/). I have not used it but a lot of people have recommended it.
-
 ## Web Browser
 
-### Firefox
-
-I use Firefox because it is open source and comes from the [Mozilla Foundation](https://www.mozilla.org/en-US/about/manifesto/), a non profit company that [respects my privacy](https://www.mozilla.org/en-US/firefox/privacy/).
-
-I use Firefox Developer Edition. To install this with `brew` you will need to tap [a cask](https://github.com/Homebrew/homebrew-cask-versions) first:
-
-```sh
-brew tap homebrew/cask-versions
-```
-
-You can then install Firefox Developer Edition with brew:
-
-```sh
-brew install homebrew/cask-versions/firefox-developer-edition
-```
-
-I use the following extensions to stay productive:
-
-* [Tabliss](https://tabliss.io/) - simple new tab page
-* [OneTab](https://www.one-tab.com/) - consolidate a bunch of open tabs into a shareable list of links
-* [Dark Reader](https://darkreader.org/) - turn any site into dark mode
-
-I use the following extensions to protect my privacy while browsing the web:
-
-* Adblocker - [uBlock Origin](https://github.com/gorhill/uBlock)
-* Tracker Blocker - [Privacy Badger](https://privacybadger.org/)
-  * Firefox now includes tracker blocking, but I leave Privacy Badger enabled.
-* [Decentraleyes](https://decentraleyes.org/)
-  * Caches CDN links locally and intercepts requests to serve from the cache. Prevents CDNs from tracking you across websites.
-
-## Other Apps I Use Daily
-
-* android-file-transfer - Transfer files to / from my android phone
-* android-platform-tools - Installs `adb` without the need for the full android studio.
-* [keepingyouawake](https://keepingyouawake.app/) - Prevents my Mac from going to sleep when I'm presenting / live streaming
-* [discord](https://discord.com/) - Messaging / Community
-* [vlc](https://www.videolan.org/) - I use VLC to watch videos instead of the built in QuickTime.
-* [keka](https://www.keka.io/en/) - Can extract 7z / rar and other types of archives
-* [kap](https://getkap.co/) - Screen recorder / gif maker
-* [figma](https://www.figma.com/) - Image editor
-* [visual-studio-code](https://code.visualstudio.com/) - Code Editor
-* [sublime-text](https://www.sublimetext.com/) - Note taking (I know there are better apps...)
-
-You can install them in one go by placing them all into a text file and then running brew install:
-
-```
-android-file-transfer
-android-platform-tools
-keepingyouawake
-discord
-slack
-vlc
-keka
-kap
-time-out
-figma
-visual-studio-code
-sublime-text
-insomnia
-```
-
-```sh
-xargs brew install < apps.txt
-```
+### Chrome
 
 ### Docker
 
@@ -324,26 +195,10 @@ Once installed, launch it and customize the settings / preferences to your likin
 
 Mac now comes with `zsh` as the default [shell](https://en.wikipedia.org/wiki/Comparison_of_command_shells). I've switched to using this with [Oh My Zsh](https://ohmyz.sh/).
 
-#### Load dotfiles
-
-All my dotfiles are stored on [github](https://github.com/w3cj/dotfiles).
-
-I clone this repo to my machine and copy the files into my home directory.
-
 ### Github SSH Setup
 
 * Follow [this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to setup an ssh key for github
 * Follow [this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to add the ssh key to your github account
-
-#### Other command line tools I use
-
-* [ffmpeg](https://en.wikipedia.org/wiki/FFmpeg) - edit videos from the command line
-* [imagemagick](https://en.wikipedia.org/wiki/ImageMagick) - edit images from the command line
-
-```sh
-brew install ffmpeg
-brew install imagemagick
-```
 
 ## Node.js
 
