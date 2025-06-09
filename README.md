@@ -21,7 +21,10 @@ This repo contains info on all the apps / tools / settings I use on my Mac.
   - [Docker](#docker)
 - [Terminal](#terminal)
   - [Shell](#shell)
+- [Git](#git)
+  - [Global Settings](#global-settings)
   - [Github SSH Setup](#github-ssh-setup)
+  - [Multiple SSH Keys for Git Platforms](#multiple-ssh-keys-for-git-platforms)
 - [Node.js](#nodejs)
   - [Global Modules](#global-modules)
 - [VS Code](#vs-code)
@@ -171,10 +174,39 @@ Once installed, launch it and customize the settings / preferences to your likin
 
 Mac now comes with `zsh` as the default [shell](https://en.wikipedia.org/wiki/Comparison_of_command_shells). I've switched to using this with [Oh My Zsh](https://ohmyz.sh/).
 
+## Git
+
+### Global Settings
+
+This is the most common and comprehensive way to see all your global Git configurations.
+
+```bash
+git config --global --list
+```
+
+This command will display all the settings stored in your global Git configuration file, typically located at `~/.gitconfig`. This is the structure of the file:
+
+```bash
+[user]
+    name = Your Name
+    email = your.email@example.com
+[core]
+    editor = code --wait
+[init]
+    defaultBranch = main
+[color]
+    ui = auto
+[credential]
+    helper = osxkeychain
+```
+
 ### Github SSH Setup
 
 * Follow [this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to setup an ssh key for github
 * Follow [this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to add the ssh key to your github account
+
+### Multiple SSH Keys for Git Platforms
+* Follow [this guide](/multiple-ssh-config.md) to set up distinct SSH keys on your Mac for different Git platforms (like GitHub and GitLab)
 
 ## Node.js
 
