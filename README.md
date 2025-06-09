@@ -5,7 +5,7 @@ This repo contains info on all the apps / tools / settings I use on my Mac.
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [What Macbook do I have?](#what-macbook-do-i-have)
+
 - [OS Settings](#os-settings)
   - [Desktop](#desktop)
   - [Finder](#finder)
@@ -14,22 +14,14 @@ This repo contains info on all the apps / tools / settings I use on my Mac.
 - [Homebrew](#homebrew)
   - [Homebrew](#homebrew-1)
   - [RayCast Homebrew Plugin](#raycast-homebrew-plugin)
-- [Window Management](#window-management)
 - [App Switching](#app-switching)
-- [Menu Bar Utilities](#menu-bar-utilities)
-  - [Hidden Bar](#hidden-bar)
-  - [System Stats Widgets](#system-stats-widgets)
-  - [Menu Bar Calendar](#menu-bar-calendar)
-- [Break Timer](#break-timer)
 - [Web Browser](#web-browser)
-  - [Firefox](#firefox)
-- [Other Apps I Use Daily](#other-apps-i-use-daily)
+  - [Chrome](#chrome)
+- [Other Apps](#other-apps)
   - [Docker](#docker)
 - [Terminal](#terminal)
   - [Shell](#shell)
-    - [Load dotfiles](#load-dotfiles)
   - [Github SSH Setup](#github-ssh-setup)
-    - [Other command line tools I use](#other-command-line-tools-i-use)
 - [Node.js](#nodejs)
   - [Global Modules](#global-modules)
 - [VS Code](#vs-code)
