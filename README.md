@@ -10,6 +10,7 @@ This repo contains info on all the apps / tools / settings I use on my Mac.
   - [Desktop](#desktop)
   - [Finder](#finder)
   - [Dock](#dock)
+  - [Useful Shortcuts](#useful-shortcuts)
 - [Quick Launching](#quick-launching)
 - [Homebrew](#homebrew)
   - [Homebrew](#homebrew-1)
@@ -28,6 +29,9 @@ This repo contains info on all the apps / tools / settings I use on my Mac.
 - [Node.js](#nodejs)
   - [Global Modules](#global-modules)
 - [VS Code](#vs-code)
+  - [Settings](#settings)
+  - [Extensions](#extensions)
+  - [Useful Shortcuts](#useful-shortcuts-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -77,6 +81,10 @@ I don't use the Dock at all. It takes up screen space, and I can use RayCast to 
     * Automatically hide and show the Dock -> Yes
     * Animate opening applications -> No
     * Show suggested and recent apps in the Dock -> No
+
+### Useful Shortcuts
+
+* Find [here](/shortcuts.md) useful Mac shortcuts.
 
 ## Quick Launching
 
@@ -249,4 +257,10 @@ npm install -g lite-server http-server license gitignore
 
 VS Code is my preferred code editor.
 
-You can view all of my VS Code settings / extensions [here](https://github.com/CodingGarden/vscode-settings).
+### Settings
+
+### Extensions
+
+### Useful Shortcuts
+
+* Find [here](/shortcuts.md) most used VS code shortcuts.
