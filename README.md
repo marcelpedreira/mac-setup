@@ -132,6 +132,8 @@ brew install alt-tab
 
 ### Chrome
 
+## Other Apps
+
 ### Docker
 
 There are multiple results when you search `docker` within `brew`. To install Docker desktop:
