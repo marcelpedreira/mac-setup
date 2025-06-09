@@ -16,10 +16,7 @@ This repo contains info on all the apps / tools / settings I use on my Mac.
   - [Homebrew](#homebrew-1)
   - [RayCast Homebrew Plugin](#raycast-homebrew-plugin)
 - [App Switching](#app-switching)
-- [Web Browser](#web-browser)
-  - [Chrome](#chrome)
-- [Other Apps](#other-apps)
-  - [Docker](#docker)
+- [Chrome](#chrome)
 - [Terminal](#terminal)
   - [Shell](#shell)
 - [Git](#git)
@@ -131,19 +128,7 @@ Search for `alt-tab` in RayCast `brew search` or:
 brew install alt-tab
 ```
 
-## Web Browser
-
-### Chrome
-
-## Other Apps
-
-### Docker
-
-There are multiple results when you search `docker` within `brew`. To install Docker desktop:
-
-```sh
-brew install --cask docker
-```
+## Chrome
 
 ## Terminal
 
@@ -296,9 +281,8 @@ VS Code is my preferred code editor.
 * Languages and Libraries
   * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
     * Intelligent Tailwind CSS tooling for VS Code.
-  * React
-    * [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-      * Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier.
+  * [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+    * Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier.
   * [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
     * Svelte language support for VS Code.
   * [Prisma](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma)
