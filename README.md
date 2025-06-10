@@ -1,6 +1,6 @@
 ## My Mac Setup
 
-This repo contains info on all the apps / tools / settings I use on my Mac.
+This repo contains info on apps / tools / settings I use on my Mac.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -85,9 +85,7 @@ I don't use the Dock at all. It takes up screen space, and I can use RayCast to 
 
 ## Quick Launching
 
-The built in spotlight search is a bit slow for me and usually has web search results as the default instead of apps or folders on my machine.
-
-I recently switched from [Alfred](https://www.alfredapp.com/) to [RayCast](https://www.raycast.com/). I'm really liking it so far.
+I replaced the built in Spotlight search with [RayCast](https://www.raycast.com/). 
 
 ```sh
 brew install raycast
@@ -263,7 +261,19 @@ npm install -g lite-server http-server license gitignore
 
 ## VS Code
 
-VS Code is my preferred code editor.
+VS Code is my preferred code editor, it includes a command to add itself to the PATH (be sure it's located in the Applications directory):
+
+1.  Open **VS Code**.
+2.  Press `Cmd + Shift + P` to open the **Command Palette**.
+3.  Type `Shell Command` in the search bar.
+4.  Select the command **"Shell Command: Install 'code' command in PATH"**.
+5.  After it runs, you may need to **restart your terminal**.
+
+Once you have completed these steps, you can open any folder or the current directory in VS Code directly from your command line by typing:
+
+```bash
+code .
+```
 
 ### Extensions
 
@@ -290,6 +300,21 @@ VS Code is my preferred code editor.
 
 ### Settings
 
+To directly edit your user settings in the `settings.json` file, follow these steps:
+
+1.  Open Visual Studio Code.
+
+2.  Open the Command Palette using the keyboard shortcut:
+    ```
+    Cmd + Shift + P
+    ```
+
+3.  In the search bar that appears, type `settings json`.
+
+4.  Select the **Preferences: Open User Settings (JSON)** option from the dropdown list and press `Enter`.
+
+5.  The `settings.json` file will open in a new editor tab. You can now add or modify any setting using key-value pairs.
+
 ```json
 {
     "editor.multiCursorModifier": "ctrlCmd",
@@ -308,6 +333,7 @@ VS Code is my preferred code editor.
     "emmet.showAbbreviationSuggestions": false,
     "terminal.integrated.fontSize": 13,
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "vscode-icons",
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.editor.labelFormat": "medium",
     "workbench.editor.showTabs": "none",
