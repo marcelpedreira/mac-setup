@@ -126,8 +126,6 @@ Search for `alt-tab` in RayCast `brew search` or:
 brew install alt-tab
 ```
 
-## Chrome
-
 ## Terminal
 
 I prefer [iTerm2](https://iterm2.com/) because:
@@ -187,7 +185,7 @@ export EDITOR='nano'
 
 ### Global Settings
 
-This is the most common and comprehensive way to see all your global Git configurations.
+To see all your global Git configurations, run:
 
 ```bash
 git config --global --list
@@ -387,3 +385,5 @@ To directly edit your user settings in the `settings.json` file, follow these st
 ### Useful Shortcuts
 
 * Find [here](/shortcuts.md) most used VS code shortcuts.
+
+## Chrome
